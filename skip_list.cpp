@@ -7,6 +7,7 @@
 #include "skip_list.h"
 
 SkipList::SkipList(){
+    srand(time(NULL));
     head=createNode(-1,SKIPLIST_MAX_LEVEL-1);
     size = 0;
 }
